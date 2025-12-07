@@ -48,7 +48,7 @@ CREATE TABLE public.skills_job_dim
     FOREIGN KEY (skill_id) REFERENCES public.skills_dim (skill_id)
 );
 
--- Set ownership of the tables to the postgres user
+-- Set ownership of the tables 
 ALTER TABLE public.company_dim OWNER to postgres;
 ALTER TABLE public.skills_dim OWNER to postgres;
 ALTER TABLE public.job_postings_fact OWNER to postgres;
